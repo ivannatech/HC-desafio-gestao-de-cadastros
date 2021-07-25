@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Ivanna Tech" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/products.js" defer></script>
+    <title>Desafio 2# - Gestão de Cadastros</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header-title">Cadastro de Produtos</h1>
+    </header>
+    <main>
+      <div>
+        <a href="../index.html">
+          <button type="button" class="button-return button blue mobile">
+            Voltar
+          </button>
+        </a>
+        <button type="button" class="button blue mobile" id="cadastrarProduto">
+          Cadastrar Produto
+        </button>
+      </div>
+      <table id="tableProduct" class="records">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Fornecedor</th>
+            <th>Contato do Fornecedor</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Produto</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input
+              type="text"
+              id="codigo"
+              data-index="new"
+              class="modal-field"
+              placeholder="Código do Produto"
+              required
+            />
+            <input
+              type="text"
+              id="nome"
+              data-index="new"
+              class="modal-field"
+              placeholder="Nome do Produto"
+              required
+            />
+            <input
+              type="text"
+              id="qtd"
+              data-index="new"
+              class="modal-field"
+              placeholder="Quantidade do Produto"
+              required
+            />
+            <input
+              type="text"
+              id="preco"
+              data-index="new"
+              class="modal-field"
+              placeholder="Preço do Produto"
+              required
+            />
+            <input
+              type="text"
+              id="fornecedor"
+              data-index="new"
+              class="modal-field"
+              placeholder="Fornecedor"
+              required
+            />
+            <input
+              type="text"
+              id="contatoFornecedor"
+              data-index="new"
+              class="modal-field"
+              placeholder="Contato do Fornecedor"
+              required
+            />
+          </form>
+          <footer class="modal-footer">
+            <div id="status"></div>
+            <button id="salvar" class="button green">Salvar</button>
+            <button id="cancelar" class="button red">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Feito com ❤ por
+      <a href="https://www.instagram.com/ivannatech/" target="_blank">
+        Ivanna Tech
+      </a>
+      para o segundo desafio do Hiring Coders #2
+    </footer>
+  </body>
+</html>
